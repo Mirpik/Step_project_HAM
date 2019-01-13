@@ -37,9 +37,13 @@ function loadMore() {
 // --------------------------
 
 $(categoryButton).on("click", function (event) {
+    console.log(($(event.target).text()));
     if($(event.target).text() == "All") {
         $(block).addClass("_hiden");
-        laodFirstPhotos()
+        laodFirstPhotos();
+        if(($(".pictures-item._hiden").length != 0) && ($("#load-more_block-b").hasClass("_hiden"))) {
+            $("#load-more_block-b").removeClass("_hiden");
+        }
     } else if($(event.target).text() == "Graphic Design") {
         $(block).addClass("_hiden");
         $(graphicDesign).each(function (index, element) {
