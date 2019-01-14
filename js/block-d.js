@@ -2,7 +2,7 @@ $(document).ready(function () {
   $('.block-d-photo').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     fade: true,
     centerMode: true,
     asNavFor: '.block-d-photo_bar'
@@ -20,3 +20,8 @@ $(document).ready(function () {
     // prevArrow: $('.boro_')
   });
 });
+// let photo = $(".block-d-photo-img-photo");
+// $(photo).each(function (index, element) {
+//   // element == this
+// console.log($(index)[2]);
+// });

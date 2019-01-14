@@ -38,34 +38,35 @@ function loadMore() {
 
 $(categoryButton).on("click", function (event) {
     console.log(($(event.target).text()));
-    if($(event.target).text() == "All") {
+    console.dir(($(event.target).text()));
+    if($(event.target).text().trim() == "All") {
         $(block).addClass("_hiden");
         laodFirstPhotos();
         if(($(".pictures-item._hiden").length != 0) && ($("#load-more_block-b").hasClass("_hiden"))) {
             $("#load-more_block-b").removeClass("_hiden");
         }
-    } else if($(event.target).text() == "Graphic Design") {
+    } else if($(event.target).text().trim() == "Graphic Design") {
         $(block).addClass("_hiden");
         $(graphicDesign).each(function (index, element) {
             if(index < 12) {
                 $(element).removeClass("_hiden");
             }
         });
-    } else if($(event.target).text() == "Web Design") {
+    } else if($(event.target).text().trim() == "Web Design") {
         $(block).addClass("_hiden");
         $(webDesign).each(function (index, element) {
             if(index < 12) {
                 $(element).removeClass("_hiden");
             }
         });
-    } else if($(event.target).text() == "Landing Pages") {
+    } else if($(event.target).text().trim() == "Landing Pages") {
         $(block).addClass("_hiden");
         $(landingPages).each(function (index, element) {
             if(index < 12) {
                 $(element).removeClass("_hiden");
             }
         });
-    }  else if($(event.target).text() == "Wordpress") {
+    }  else if($(event.target).text().trim() == "Wordpress") {
         $(block).addClass("_hiden");
         $(wordpress).each(function (index, element) {
             if(index < 12) {
@@ -100,3 +101,4 @@ $(categoryButton).on("click", function (event) {
 //         }
 //     });
 // });
+

@@ -582,6 +582,11 @@
     text-decoration: none;
 }
 
+.block-d-nav_arrow:hover {
+    z-index: 2;
+    /* background-color: #18cfab; */
+}
+
 .block-d-photo_bar {
     display: flex;
     flex-wrap: wrap;
