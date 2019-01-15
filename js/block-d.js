@@ -20,8 +20,14 @@ $(document).ready(function () {
     // prevArrow: $('.boro_')
   });
 });
-// let photo = $(".block-d-photo-img-photo");
-// $(photo).each(function (index, element) {
-//   // element == this
-// console.log($(index)[2]);
-// });
+
+$(document).ready(function () {
+  console.log($(".slick-arrow"));
+  $(".slick-slide").css("transform", "translateY(-2px)");
+  
+  $(".slick-arrow").on("click", function (event) {
+    // $(".slick-slide").removeClass("_transform");
+    $(".slick-slide").css("transform", "translateY(-2px)");
+    $(".slick-center").css("transform", "translateY(-6px)");
+  });
+});

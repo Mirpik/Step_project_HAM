@@ -65,12 +65,25 @@
     font-size: 13px;
 }
 
+/* .menu-item::after {
+    width: 200px;
+    height: 200px;
+    background-color: #18cfab;
+} */
+
 .menu-item:hover {
-    color: #00cc99;
+    color: #18cfab;
 }
 
-.menu-item-wrapper:hover {
-    border-bottom: 2px solid #00cc99;
+.menu-item-wrapper {
+    width: 100%;
+}
+
+.menu-item-wrapper::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #18cfab;
 }
 
 .search {
