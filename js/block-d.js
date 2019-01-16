@@ -16,17 +16,14 @@ $(document).ready(function () {
     dots: true,
     centerMode: true,
     focusOnSelect: true,
-    // appendArrows: $('.block-d-nav_arrow'),
-    // prevArrow: $('.boro_')
+    
   });
 });
 
 $(document).ready(function () {
   console.log($(".slick-arrow"));
   $(".slick-slide").css("transform", "translateY(-2px)");
-  
-  $(".slick-arrow").on("click", function (event) {
-    // $(".slick-slide").removeClass("_transform");
+  $(".slick-arrow").on("click", function (event) { 
     $(".slick-slide").css("transform", "translateY(-2px)");
     $(".slick-center").css("transform", "translateY(-6px)");
   });

@@ -7,8 +7,7 @@ $(document).ready(function () {
     //         // element == this
             if(element == event.target){
                 let elWidth = $(element).css("width");
-                $(".menu-item-style_line").eq(index).css("width", elWidth).removeClass("_hiden");
-    //            
+                $(".menu-item-style_line").eq(index).css("width", elWidth).removeClass("_hiden");        
             }
         });
     });

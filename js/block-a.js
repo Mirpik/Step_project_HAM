@@ -11,7 +11,7 @@ href.on("click", function (event) {
         // element == this
         if($(element).hasClass("clicked")) {
             let i = index;
-            //     console.log(index);
+            
             $(".block-a-description").addClass("_hiden");
             $(`.block-a-description:eq(${i})`).removeClass("_hiden");
 
